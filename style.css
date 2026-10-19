@@ -418,3 +418,119 @@ h2 {
     max-width: none;
   }
 }
+
+.game-page {
+  padding: 30px 20px 60px;
+  text-align: center;
+}
+
+.back {
+  display: block;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+  color: var(--pink);
+}
+
+.back:hover {
+  color: var(--yellow);
+}
+
+.game-title {
+  font-size: clamp(22px, 5vw, 36px);
+  margin-bottom: 24px;
+}
+
+.game-box {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.game-info {
+  margin-bottom: 16px;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.game-message {
+  min-height: 30px;
+  margin: 16px 0;
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.game-box canvas {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 4px solid var(--blue);
+  border-radius: 12px;
+}
+
+.pad {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-areas:
+    ". up ."
+    "left down right";
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.pad button {
+  height: 50px;
+  font-size: 22px;
+  color: var(--yellow);
+  background: none;
+  border: 3px solid var(--blue);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pad-up { grid-area: up; }
+.pad-left { grid-area: left; }
+.pad-down { grid-area: down; }
+.pad-right { grid-area: right; }
+
+.memory-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.memory-card {
+  aspect-ratio: 1;
+  font-size: 32px;
+  color: var(--yellow);
+  background: none;
+  border: 3px solid var(--blue);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.memory-card.open {
+  border-color: var(--yellow);
+}
+
+.memory-card.done {
+  border-color: var(--cyan);
+  opacity: 0.6;
+}
+
+.holes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hole {
+  aspect-ratio: 1;
+  font-size: 40px;
+  background: none;
+  border: 3px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+}
