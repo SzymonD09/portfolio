@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wąż | Szymon Dobosz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="game-page">
+  <a href="../index.html#projekty" class="back">&laquo; WRÓĆ</a>
+  <h1 class="game-title">Wąż</h1>
+
+  <div class="game-box">
+    <p class="game-info">Wynik: <span id="score">0</span></p>
+    <canvas id="game" width="400" height="400"></canvas>
+    <div class="pad">
+      <button class="pad-up" data-dir="up">&uarr;</button>
+      <button class="pad-left" data-dir="left">&larr;</button>
+      <button class="pad-down" data-dir="down">&darr;</button>
+      <button class="pad-right" data-dir="right">&rarr;</button>
+    </div>
+    <button class="button" id="start">START</button>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>
